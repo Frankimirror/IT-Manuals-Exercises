@@ -1,0 +1,11 @@
+#cancion {
+    background: -webkit-linear-gradient(darkblue,red);
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;  
+  }
+
+h2 {
+    color: darkblue;
+}

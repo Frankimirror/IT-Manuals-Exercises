@@ -1,0 +1,11 @@
+.primero::first-letter{
+    font-size: 3em;
+    color: #111111;
+}
+.primero::first-line{
+    font-size: 2em;
+    color: #222222;
+}
+.primero{
+    color: #333333;
+}

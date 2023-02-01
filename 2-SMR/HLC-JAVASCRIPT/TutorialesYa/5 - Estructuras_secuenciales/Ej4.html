@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Espejo Carretero</title>
+</head>
+<body>
+    
+   <!--Se debe desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. 
+    Mostrar lo que debe abonar el comprador (Ingresar por teclado un precio sin decimales, es decir un entero: 2, 7, 90 etc.)-->
+    
+    <h1>Ejercicio Numero 4</h1>
+
+
+    <script>
+    
+    let precio;
+    let cantidad;
+
+    precio = prompt("Por favor, indique el precio del producto");
+
+    cantidad = prompt("Por favor, introduzca la cantidad de productos que se vaya a llevar: ");
+
+   
+    let importe;
+    importe = parseInt(precio) * parseInt(cantidad);
+    let iva= importe*1.21;
+
+    document.write("Los productos que escogerán serán un total de: ")
+    document.write(cantidad)
+
+    document.write("<br/><br/>El precio total será: ") ; 
+    document.write(importe) ;
+
+    document.write("<br/><br/>Precio con IVA: ")
+    document.write(iva)
+
+    
+    
+    </script>
+
+    <hr>
+    <style>
+        body {
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+
+</body>
+</html>

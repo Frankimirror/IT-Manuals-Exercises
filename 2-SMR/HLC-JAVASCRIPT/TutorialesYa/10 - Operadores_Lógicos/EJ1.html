@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    /*Se ingresan por teclado tres números, si al menos uno de los valores ingresados es menores a 10, 
+    imprimir en la página la leyenda 'Alguno de los números es menor a diez'.*/
+
+    let num1, num2, num3;
+        num1 = parseInt(prompt("Ingrese primer valor"));
+        num2 = parseInt(prompt("Ingrese segundo valor"));
+        num3 = parseInt(prompt("Ingrese tercer valor"));
+
+    if( num1 < 10 || num2 < 10 || num3 < 10 ) {
+        document.write("Alguno de los numeros es menor a diez")
+    } else {
+        document.write("Todos son mayores a diez");
+    }
+
+    </script>
+
+
+</body>
+</html>

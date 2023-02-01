@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* Realizar una página web que permita al usuario registrar una contraseña, que
+    debe ser un número de mas de 5 cifras. Si la contraseña es de menor de 5 cifras
+    mostrar el mensaje 'La contraseña debe tener al menos 5 cifras numéricas', y si
+    es de 5 cifras o más, pedir al usuario que repita la contraseña; si las dos
+    contraseñas coinciden mostrar el mensaje 'Contraseña creada correctamente' y en
+    caso contrario mostrar el mensaje 'Las contraseñas introducidas no coinciden' */
+       
+
+        let contraseña, contrados;
+
+        
+        contraseña= prompt("Introduce una contrasela válida")
+
+        if (contraseña<10000) {
+            document.write("La contraseña tiene menos de 5 caracteres")
+        } else {
+            contrados=parseInt(prompt("Repita la contraseña por favor"))
+        } if (contraseña==contrados) {
+            document.write("Contraseña creada correctamente")
+        } else {
+            document.write("Las contraseñas no coinciden")
+        }
+
+        
+    </script>
+</body>
+</html>

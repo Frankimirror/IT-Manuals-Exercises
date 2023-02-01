@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FranciscoEspejo</title>
+</head>
+<body>
+    <script>
+
+    /* Realiza el control de acceso a una caja fuerte, la combinación de 4
+        cifras. El programa nos pedir la combinaciónn para abrirla, si no
+        acertamos se nos mostrará el mensaje, "Lo siento esa no es la
+        combinación" y si acertamos "La caja se ha abierto
+        satisfactoriamente". Tendremos 4 oportunidades para abrirlas. (la
+        combinación de la caja fuerte será 1234) */
+
+        let x = 0;
+        let clave = 0;
+
+        do{
+            clave = parseInt(prompt("Introdúce su clave de 4 dígitos. Dispone de 4 oportunidades"))
+            x++
+        }
+        
+        while(clave != 1234 && x < 4);
+
+        if(clave ==1234){
+            document.write("La caja se ha abierto satisfactoriamente");
+        }else{
+            document.write("Lo siento, esa no es la combinación correcta");
+        }
+       
+
+    </script>
+</body>
+</html>

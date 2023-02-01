@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*   Realizar una página que pida el tipo de animal y el tipo de comida, si es un
+    gato y la comida es pescado mostrar el mensaje "miau me encanta esta comida", si
+    es un gato y la comida es carne mostrar un mensaje "arggg odio esta comida". En
+    cambio si es un perro y la comida es pescado mostrar el mensaje "arggg odio esta
+    comida" y si es un perro y la comida es carne mostrar el mensaje "guau me
+    encanta esta comida". Si la comida no es ni carne ni pescado o el animal no es
+    ni gato ni perro, en todos los casos mostrar el mensaje "no contemplamos esa
+    combinación" */
+       
+       
+       
+       
+       
+       let animal, comida
+
+        animal=prompt("Cuál es su animal preferido");
+        comida=prompt("Qué come")
+
+        if (animal=="gato" && comida =="pescado" ) {
+            document.write("MIAU, me encanta")
+        } else if (animal == "gato" && comida == "carne") {
+            document.write("BAG, odio eso")
+        } else if (animal == "perro" && comida == "carne") {
+            document.write("GUAU, me encanta")
+        } else if (animal =="perro" && comida =="pescado") {
+            document.write("BAG, odio esto")
+        } else {
+            document.write ("No conocemos eso")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleform.css" rel="stylesheet">
+    <title>FranciscoEspejoC</title>
+</head>
+<body>
+    <div class="inscripcion">
+        <h2>HOJA DE INSCRIPCIÓN <br> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+        </div>
+        
+        <div class="quest1">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Apellidos</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni"><br><br>
+
+                <label for="localidad">Localidad de nacimiento</label>
+
+                <!-- Aquí he usado el atributo placeholder  -->               
+                <input type="text" id="localidad" name="localidad" placeholder="Escribe en mayúsculas"><br><br>
+                
+
+                <label for="provincia">Provincia</label>
+                <select name="provincia">
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Cadiz">Cádiz</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Granada">Granada</option>
+                </select>
+
+                <label for="birthday">Cumpleaños</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label for="direccion">Dirección</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="postal">Código postal</label>
+                <input type="postal" id="postal" name="postal"><br><br>
+                
+                <input type="submit" value="Submit">
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div class="quest2">
+            <fieldset>
+                <legend>Forma de acceso</legend>
+                <br>
+                    
+                    <ul>
+                    <li><input type="radio" name= "acceso" value="1">Cupo 1 (Bachillerato)</li> 
+                            <ul>
+                                <li><input type="radio" name= "acceso" value="1">Bachillerato relacionado</li>
+                                <li><input type="radio" name= "acceso" value="1">Bachillerato no relacionado</li>
+                                <li><input type="radio" name= "acceso" value="1">Otro (Especifique)<input type="text" id="otro" name="otro"></li>
+                            </ul>
+
+                    <li><input type="radio" name= "acceso" value="2">Cupo 2 (Ténico)</li><br>
+                    <li><input type="radio" name= "acceso" value="3">Cupo 3 (Prueba de acceso)</li> <br>           
+                    </ul>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div class="quest3">
+            <fieldset>
+                <legend>Documentos adjuntados</legend>
+                <br>
+
+                    
+                    <input type="checkbox" name="dni" value="dni" readonly>Fotocopia DNI &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                    <input type="checkbox" name="acad" value="acad">Certificado Académico <br><br>
+                    <input type="checkbox" name="doc" value="doc">Otros documentos (especifique) <laber for="nombre"><input type="text" name= "nombre"></laber><br><br>
+                    <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple /> <br><br>
+                    <input type="submit" value="Enviar solicitud">
+                    <input type="reset" value="Borrar"> 
+
+            </fieldset>
+
+
+
+        </div>
+</body>
+</html>

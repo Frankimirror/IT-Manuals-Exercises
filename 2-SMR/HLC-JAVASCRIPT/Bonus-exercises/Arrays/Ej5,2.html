@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise5</title>
+</head>
+<body>
+
+    <!-- 5. Dado un array de 50 enteros (entre -3 y 100) imprimir un mensaje que diga si son todos
+    positivos. -->
+
+    <script>
+    let numbers = new Array(50);
+    let bulean = true;
+    let allpositives=true;
+
+        for (let f=0; f < numeros.length; f++) {
+            numeros[f]=parseInt(Math.random()*100-3);
+        }
+        document.write(numbers + "<br>");
+
+        for (let f=0; f < numeros.length && allpositives ; f++) {
+            if (numbers[f]<0){
+                allpositives=false;
+            }
+        }
+        if(allpositives){
+            document.write("Todos los números positivos")
+        }
+        
+    </script>
+</body>
+</html>

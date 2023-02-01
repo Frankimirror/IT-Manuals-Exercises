@@ -1,0 +1,21 @@
+a:link {
+    font-size: 15pt;
+    border: 1px;
+    border-style: dotted;
+    border-color: orangered;
+}
+
+img[alt*=logo] {
+    font-size: 11pt;
+    border: 1px;
+    border-style: dotted;
+    border-color: green;
+}
+img[alt*=randomimage] {
+    font-size: 10pt;
+    font-style: italic;
+    border: 1px;
+    border-style: dashed;
+    border-color: darkred;
+}
+

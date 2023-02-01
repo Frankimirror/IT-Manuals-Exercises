@@ -1,0 +1,217 @@
+#header {
+    text-align: center;
+    align-items: center;
+	
+}
+
+
+
+ /* IMAGEN INFORMATICA */
+
+img {
+	text-align: center;
+	padding: 100px 0px 0px 600px;
+}
+
+ /* Descripción RTX */
+
+ p  {
+	text-align: center;
+	
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+#header h1 {
+    margin: 0px;
+	font-family: 'Franklin Gothic Medium';
+	text-decoration:none;
+	font-weight: 600;
+	font-size: 20px;
+	color:#ffffff;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:40px;
+	padding-right:40px;
+	background-color:#f2595e;
+	border-color: #F69DA1;
+	border-width: 3px;
+	border-style: solid;
+		
+}
+
+#header h2 {
+	text-decoration:none;
+	font-weight: 600px;
+	font-size: 20px;
+	font-family: 'Lucida Sans Regular';
+}
+
+a {
+	text-decoration: none;
+}
+
+
+ /* Para el boton de comprar ya */ 
+
+.btn-bootstrap {
+	padding: .375rem .75rem;
+	border-radius: .25rem;
+	background-color: #007bff;
+	
+	color: #fff;
+	transition: background-color .15s ease-in-out;
+  }
+  
+  .btn-bootstrap:hover, .btn-bootstrap:focus {
+	background-color: #0069d9;
+  }
+  
+  .btn-bootstrap:active {
+	background-color: #0062cc;
+  }
+
+  /* Para el H2 */
+	h2 {
+	padding: 0.8em 1.8em;
+	border: 2px solid #17C3B2;
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	transition: .3s;
+	z-index: 1;
+	font-family: inherit;
+	color: #17C3B2;
+   }
+   
+    h2::before {
+	content: '';
+	width: 0;
+	height: 300%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	background: #17C3B2;
+	transition: .5s ease;
+	display: block;
+	z-index: -1;
+   }
+   
+   h2:hover::before {
+	width: 105%;
+   }
+   
+   h2:hover {
+	color: #111;
+   }
+
+
+
+
+#comprar {
+	border-color: gray;
+	border-width: 5px;
+	border-style: inset;
+	width: 130px;
+	text-align: center;
+	padding: 0px 0px 0px 600px;
+}
+
+ul {
+	align-items: bottom;
+	text-decoration: none;
+	list-style: none;
+	color: white;
+}
+
+
+
+#tempest {
+	padding: 0px 0px 0px 530px;
+}
+
+#list img {
+	align-items: bottom;
+	list-style: none;
+	padding: 100px 0px 0px 410px;
+	color: white;
+}
+
+body {
+	background-image: url(imgs/Wallp.jpg);
+	background-position: center;
+	margin: 0px;
+}
+
+
+
+/* Botones para indice  */
+
+
+button {
+	--glow-color: rgb(255, 255, 255);
+	--glow-spread-color: rgba(191, 123, 255, 0.781);
+	--enhanced-glow-color: rgb(255, 255, 255);
+	--btn-color: rgb(100, 61, 136);
+	border: .25em solid var(--glow-color);
+	padding: 1em 3em;
+	color: var(--glow-color);
+	font-size: 15px;
+	font-weight: bold;
+	background-color: var(--btn-color);
+	border-radius: 1em;
+	outline: none;
+	box-shadow: 0 0 1em .25em var(--glow-color),
+		   0 0 4em 1em var(--glow-spread-color),
+		   inset 0 0 .75em .25em var(--glow-color);
+	text-shadow: 0 0 .5em var(--glow-color);
+	position: relative;
+	transition: all 0.3s;
+	text-decoration: none;
+   }
+   
+   button::after {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	top: 120%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--glow-spread-color);
+	filter: blur(2em);
+	opacity: .7;
+	transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+	color: var(--btn-color);
+	background-color: var(--glow-color);
+	box-shadow: 0 0 1em .25em var(--glow-color),
+		   0 0 4em 2em var(--glow-spread-color),
+		   inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+	box-shadow: 0 0 0.6em .25em var(--glow-color),
+		   0 0 2.5em 2em var(--glow-spread-color),
+		   inset 0 0 .5em .25em var(--glow-color);
+   }
+
+   h3 {
+	text-align: center;
+	
+   }

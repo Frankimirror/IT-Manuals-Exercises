@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <title>FranciscoE</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en el plano. 
+        Informar cuántos puntos se han ingresado en el primer, segundo, tercer y cuarto cuadrante. 
+        Al comenzar el programa se pide que se ingrese la cantidad de puntos a procesar. */
+        
+
+        let cuad1 = 0;
+        let cuad2 = 0;
+        let cuad3 = 0;
+        let cuad4 = 0;
+        let cant = parseInt(prompt("Cuantos puntos introducirá: "));
+        cant = parseInt(cant);
+
+        for (let n = 1; n <= cant; n++) {
+            let x = parseInt(prompt("Introduce la coordenada x: "));
+            let y = parseInt(prompt("Introduce la coordenada y: "));
+
+            if (x > 0 && y > 0) {
+                cuad1++;
+            } else {
+                if (x < 0 && y > 0) {
+                    cuad2++;
+                } else {
+                    if (x < 0 && y < 0) {
+                        cuad3++;
+                    } else {
+                        if (x > 0 && y < 0) {
+                            cuad4++;
+                        }
+                    }
+                }
+            }
+        }
+        
+        document.write("Cantidad de puntos introducidos en el primer cuadrante: " + cuad1 + "<br>");
+        document.write("Cantidad de puntos introducidos en el segundo cuadrante: " + cuad2 + "<br>");
+        document.write("Cantidad de puntos introducidos en el tercer cuadrante: " + cuad3 + "<br>");
+        document.write("Cantidad de puntos introducidos en el cuarto cuadrante: " + cuad4 + "<br>");
+
+    </script>
+
+</body>
+
+</html>     
+

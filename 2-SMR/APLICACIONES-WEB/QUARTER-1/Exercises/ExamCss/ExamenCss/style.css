@@ -1,0 +1,179 @@
+
+/* He usado font-face para asignar una fuente de google*/
+@font-face {
+    font-family: 'Audiowide';
+    src: url('https://fonts.googleapis.com/css?family=Audiowide') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trirong';
+    src: url('https://fonts.googleapis.com/css?family=Trirong') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Asigno las fuentes de google */
+h1, h2, h3, h4{
+    font-family: 'Trirong' ;
+}
+
+p,a {
+    font-family: 'Audiowide';
+}
+
+/* Centro el logo de la pagina con flex  */
+.logoimagen {
+    display: flex;
+    justify-content: center;
+}
+
+/* Configuracion de la navbar */
+.top-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #e63946;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 20px;
+}
+
+.top {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 50%;
+}
+
+.top a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Clase para el contenedor principal, he usado flexbox para organizarla*/
+.container {
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+/* Etiquetas SEO main y aside*/
+main{
+    background-image: linear-gradient(to right,#1d3557 , #457b9d);
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+aside {
+    background-color: gray;
+    width: 400px;
+}
+
+#titulo{
+    text-shadow: -5px -15px 1px blue;
+    font-size: 50px;
+}
+
+/*Texto con primero letra mayuscula */
+.description::first-letter{
+    font-size: 70px;
+    color: black;
+    margin: 0px auto;
+    width: 800px;
+}
+
+/* Galeria de fotos con sombras */
+.galeria {
+    text-shadow: 0px 0px 20px black;
+}
+
+/* Ultimas entradas y fotos del dia */
+.box1{
+    margin: 0px auto;
+    background-color: #457b9d;
+    width: 300px;
+}
+
+.box1 h3 {
+    color: white;
+    text-align: center;
+}
+
+.box2
+{   text-align: center;
+    margin: 0px auto;
+    background-color: #457b9d;
+    width: 300px;
+    height: 200px;
+}
+
+.box2 h3 {
+    color: white;
+    text-align: center;
+}
+
+/* Footer ordenador y configurado con flexbox*/
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #e63946;
+    color: white;
+}
+.rss, .copyright {
+    margin: 35px;
+}
+
+
+/* Fotos rotadas con bordes, con sombras y con bordes redondos. */
+.fotos {
+    margin: 50px;
+}
+
+.foto1{
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    transform: rotate(-25deg );
+}
+.foto2{
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    transform: rotate(8deg );
+
+    
+}
+.foto3{
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    transform: rotate(-5deg );
+
+}
+.foto4{
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    transform: rotate(15deg );
+
+}
+
+/* Fotos central con borde, sombra acentuada y bordes redondos*/
+.central {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}

@@ -1,0 +1,28 @@
+#card {
+    width: 400px;
+    height: 350px;
+    box-shadow: 10px 10px 5px rgb(0, 85, 114);    
+    text-align: center;
+    float: left;
+}
+
+
+#card2 {
+    float: right;
+}
+
+#card2 h1 {
+    text-shadow: 2px 2px 5px red;
+    
+}
+
+#card2 p {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+} 
+
+#card2 p:hover {
+    box-shadow: 10px 10px lightblue;
+}

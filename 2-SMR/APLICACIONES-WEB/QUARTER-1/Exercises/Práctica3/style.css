@@ -1,0 +1,95 @@
+
+body {
+    background: linear-gradient(to bottom, rgb(103, 103, 255), rgb(255, 60, 239));
+}
+
+#receta {
+    border: red 5px double;
+}
+
+#receta h1{
+    text-align: center;
+}
+
+#compra {
+    border: red 5px double;
+}
+
+#lacteos {
+    list-style-type: square;
+}
+
+#compra h1 {
+    text-align: center;
+}
+
+#horario {
+    border: red 5px double;
+}
+
+#horario h1 {
+    text-align: center;
+}
+
+#definicion {
+    border: red 5px double; 
+}
+
+#definicion h1 {
+    text-align: center;
+}
+.btn {
+    --color: red;
+    --color2: rgb(0, 191, 255);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }

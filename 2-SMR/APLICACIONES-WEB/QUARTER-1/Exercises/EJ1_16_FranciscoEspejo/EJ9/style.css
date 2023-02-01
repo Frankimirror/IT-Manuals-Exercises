@@ -1,0 +1,19 @@
+tr:nth-child(2){
+    background-color: lawngreen;
+    color: gray;
+}
+
+tr:last-child{
+    background-color: darkred;
+    color: white;
+}
+
+tr *{
+    
+    border-bottom: 1px solid black;
+
+}
+
+.team{
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+body {
+    background-color: grey;
+    color: white;
+}
+
+#local {
+    color: darkgreen;
+}
+
+pre {
+    font-size: 14px;
+    color: black;   
+}
+
+h1 {
+    color: red;
+}
+

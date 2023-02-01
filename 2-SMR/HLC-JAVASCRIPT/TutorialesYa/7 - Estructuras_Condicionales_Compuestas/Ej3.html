@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+
+        /*Se ingresa por teclado un número positivo de uno o dos dígitos (1..99) mostrar 
+        un mensaje indicando si el número tiene uno o dos dígitos (recordar de 
+        convertir a entero con parseInt para preguntar posteriormente por 
+        una variable entera). Tener en cuenta qué condición debe cumplirse para tener dos 
+        dígitos un número entero. */
+
+        let n1;
+        n1 = parseInt(prompt('Ingrese un número entre entre 1 y 99:'));
+        if (n1 < 10) {
+            document.write('El número ingresado tiene un dígito');
+        } else {
+            document.write('El número ingresado tiene dos dígitos');
+        }
+
+
+    </script>
+
+</body>
+</html>

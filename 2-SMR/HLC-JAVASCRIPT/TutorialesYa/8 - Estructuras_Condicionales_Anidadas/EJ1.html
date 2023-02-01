@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+
+        /* Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos. */
+
+        let n1, n2, n3;
+       
+        n1 = parseInt(prompt('Ingrese primer valor:'));
+        n2 = parseInt(prompt('Ingrese segundo valor:'));
+        n3 = parseInt(prompt('Ingrese tercer valor:'));
+       
+        if (n1 > n2) {
+            if (n1 > n3) {
+                document.write('El mayor de los tres valores es:' + n1);
+            } else {
+                document.write('El mayor de los tres valores es:' + n3);
+            }
+        } else {
+            if (n2 > n3) {
+                document.write('El mayor de los tres valores es:' + n2);
+            } else {
+                document.write('El mayor de los tres valores es:' + n3);
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>

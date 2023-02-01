@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <meta charset="utf-8">
+    <title> Francisco Espejo </title>
+    <link href="CSSs/login.css" rel="stylesheet">
+    <meta name="description" content="Mi pagina web"/>
+    <meta name="author" content="FranciscoEspejo"/>
+    <link rel="icon" href="imgs/iconoperfil.png" />
+
+    <meta name="keywords" content="friki, blog, criticas, videojuegos"/>
+</head>
+  <body>
+
+    <script src="alerta.js"></script>
+    <div class="main-block">
+      <img src="imgs/feedback.png" alt="feedback" width="800px" height="100px">
+        <a href="index.html"><h4>Volver atrás</h4></a> 
+        
+
+      <h1>Francisco Espejo</h1>
+      <form>
+
+        <div class="info">
+          <div class="info-item">
+
+            <label class="icon" for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Nombre" required/>
+          </div>
+
+          <div  class="info-item">
+            <label class="icon" for="age"></label>
+            <input type="text" name="age" id="age" placeholder="Edad" required/>
+          </div>
+
+          <div  class="info-item">
+            <label class="icon" for="email"></label>
+            <input type="text" name="email" id="email" placeholder="Email" required/>
+          </div>
+
+          <div  class="info-item">
+            <label class="icon" for="phone"></label>
+            <input type="text" name="phone" id="phone" placeholder="Teléfono" required/>
+          </div>
+        </div>
+
+
+        <div class="grade-type">
+          <h3>Valora mi página web</h3>
+
+          <div> 
+            <input type="radio" value="none" id="radioOne" name="grade" checked/>
+            <label for="radioOne" class="radio">Muy buena</label>
+          </div>
+
+          <div>
+            <input type="radio" value="none" id="radioTwo" name="grade" />
+            <label for="radioTwo" class="radio">Buena</label>
+          </div>
+
+          <div>
+            <input type="radio" value="none" id="radioThree" name="grade" />
+            <label for="radioThree" class="radio">Regular</label>
+          </div>
+
+          <div>
+            <input type="radio" value="none" id="radioFour" name="grade" />
+            <label for="radioFour" class="radio">Mala</label>
+          </div>
+
+          <div>
+            <input type="radio" value="none" id="radioFive" name="grade" />
+            <label for="radioFive" class="radio">Muy mala</label>
+          </div>
+        </div>
+
+        <h3>¿Tienes algún comentario?</h3>
+        <textarea rows="4"></textarea>
+        <a href="index.html"><button type="submit">Enviar</button></a>
+      </form>
+    </div>
+
+  </body>
+</html>

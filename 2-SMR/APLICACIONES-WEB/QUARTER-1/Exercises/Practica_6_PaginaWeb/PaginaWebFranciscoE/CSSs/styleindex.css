@@ -1,0 +1,134 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121629;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff15cc;
+  border-radius: 3px;
+}
+
+body {
+  
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    text-align: center;
+    margin: 0px 
+}
+
+
+	
+@media screen and (max-width: 980px){
+    *{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px){
+  * {
+      height: auto;
+      width: 150px;
+  }
+  .Iam {
+    font-size: 1000px;
+    
+  }
+  
+}
+
+
+ 
+
+
+
+  
+
+
+
+
+.Iam {
+    padding: 2em 5em;
+    font: normal 40px/50px sans-serif;  
+    color: #044a99;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.Iam p {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+.Iam b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    top: 40px;
+  }
+.Iam .innerIam {
+    display: inline-block;
+    color: #002e52;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+  
+  
+/*animation*/
+-webkit-animation:move 5s;
+     -moz-animation:move 5s;
+      -ms-animation:move 5s;
+       -o-animation:move 5s;
+          animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+     -moz-animation-iteration-count:infinite;
+      -ms-animation-iteration-count:infinite;
+       -o-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+     -moz-animation-delay:1s;
+      -ms-animation-delay:1s;
+       -o-animation-delay:1s;
+          animation-delay:1s;
+}
+@keyframes move{
+  0%  { top: 0px; }
+  20% { top: -50px; }
+  40% { top: -100px; }
+  60% { top: -150px; }
+  80% { top: -200px; }
+  }
+  
+@-webkit-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+@-moz-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+@-o-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+@keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+}
+
