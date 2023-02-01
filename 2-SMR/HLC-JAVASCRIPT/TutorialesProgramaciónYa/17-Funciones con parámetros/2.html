@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function numOrdenador(x1, x2, x3) {
+
+                    if (x1 < x2 && x1 < x3) {
+                        document.write(x1 + " ");
+                        if (x2 < x3) {
+                            document.write(x2 + " " + x3);
+                        } else {
+                            document.write(x3 + " " + x2);
+                        }
+                    } else {
+                        if (x2 < x3) {
+                            document.write(x2 + "");
+                            if (x1 < x3) {
+                                document.write(x1 + " " + x3);
+                            } else {
+                                document.write(x3 + " " + x1);
+                            }
+                        } else {
+                            document.write(x3 + "");
+                            if (x1 < x2) {
+                                document.write(x1 + " " + x2);
+                            } else {
+                                document.write(x2 + " " + x1);
+                            }
+                        }
+                    }
+                }
+            
+            
+                let num1 = parseInt(prompt("Introduce el primer número que quieras: "));
+                let num2 = parseInt(prompt("Introduce el primer número que quieras: "));
+                let num3 = parseInt(prompt("Introduce el primer número que quieras: "));
+                
+                document.write("Los tres valores ingresados son " + num1 + " · " + num2 + " · " + num3 + "<br>");
+                document.write("Los valores ordenados de menor a mayor son: ");
+                numOrdenador(num1, num2, num3);
+    </script>
+</body>
+</html>
