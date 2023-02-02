@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 1 - Chapter 6</title>
+</head>
+<body>
+    <script>
+        
+        //Three notes from a student are entered, if the average is greater than or equal to seven, display the message 'Promoted'. Keep in mind that to obtain the average we must operate sum=note1+note2+note3; and then do average=sum/3;
+        ///When we load a note and we want to immediately convert the entered value to an integer we can do:
+        //
+        //note1=prompt('Enter first note:','');
+        //note1=parseInt(note1);
+        //
+        //Or in shorter form:
+        //note1=parseInt(prompt('Enter first note:',''));
+
+        let num1 = parseInt(prompt("What's your first note?"));
+        let num2 = parseInt(prompt("What's your second note?"));
+        let num3 = parseInt(prompt("What's your third note?"));
+        
+        let sum = num1+num2+num3;
+        let average = sum / 3; 
+
+        document.write("Your average is " + average);
+    </script>
+    
+</body>
+</html>

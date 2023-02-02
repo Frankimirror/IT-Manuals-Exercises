@@ -1,21 +1,3 @@
----
-layout: single
-title: USO DE LA UTILIDAD NETPLAN
-excerpt: "Si eres un usuario avanzado en el mundo open source, necesitas conocer esta utilidad para configurar tus redes. Con la utilidad netplan podrás configurar todo y de una manera sencilla, aunque recomiendo saber algo de linux y de redes para empezar a utilizar esta herramienta "
-date: 2023-01-20
-classes: wide
-header:
-  teaser: /assets/images/articulos/2023-01-20-utilidad-netplan/netplanicon.png
-  teaser_home_page: true
-  icon: /assets/images/articulos/2023-01-20-utilidad-netplan/netplanicon.png
-categories:
-  - Linux
-toc: true
-tags:
-  - Herramientas
-comments: true
----
-
 # ¿Qué es netplan?
 
 Netplan es una herramienta para configurar de manera sencilla nuestras redes en nuestra distribución favorita Linux. Netplan usa YAML (es un lenguaje de serialización de datos que suele utilizarse en el diseño de archivos de configuración) para crear una descripción de las interfaces de red que tenemos y para configurar cada una de ellas. A partir de esta descripción que le asignemos, Netplan generará una configuración necesaria para la herramienta de renderización elegida.

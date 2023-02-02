@@ -1,3 +1,5 @@
+# Forensic Linux
+
 # Archivos de registros (LOGS)
 
 Los logs son esencial a la hora de detectar fallos e intentar solucionarlos. Lo más recomandable es buscarlos en el directorio /var/log y listar los archivos contenidos dentro de ese directorio. Los nombres que tendrán estos archivos son auto explicativos.

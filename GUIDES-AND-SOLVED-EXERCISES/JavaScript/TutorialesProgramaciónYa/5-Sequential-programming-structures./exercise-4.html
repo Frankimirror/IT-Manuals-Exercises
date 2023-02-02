@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 4 - Chapter 5</title>
+</head>
+<body>
+    <script>
+
+        //A program should be developed that asks for the entry of the price of an item and the quantity that the customer carries. Show what the buyer must pay 
+        //(Enter a price without decimals on the keyboard, that is, an integer: 2, 7, 90 etc.)
+
+        let price = parseInt(prompt("What's the price of the product"));    
+        let items = parseInt(prompt("How many items does the customer bring?"));
+        
+        let totalPrice = price * items;
+
+        document.write("The total price is " + totalPrice + "$");
+    </script>
+</body>
+</html>

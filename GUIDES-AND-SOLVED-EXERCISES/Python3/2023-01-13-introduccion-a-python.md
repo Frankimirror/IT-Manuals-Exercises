@@ -1,21 +1,3 @@
----
-layout: single
-title: INTRODUCCIÓN A PYTHON
-excerpt: "¿Quieres aprender a instalar python 3.16? Estás en el artículo adecuado. Aquí podrás aprender cómo instalar Python en una máquina Linux, además de PIP y de CLI sin ninguna complejidad. En próximos artículos enseñaré cómo escribir sencillos programas con python "
-date: 2023-01-13
-classes: wide
-header:
-  teaser: /assets/images/articulos/python-art.png
-  teaser_home_page: true
-  icon: /assets/images/articulos/python.png
-categories:
-  - Programación
-toc: true
-tags:
-  - Python
-comments: true
----
-
 # INSTALACIÓN Y CONFIGURACIÓN DE PYTHON 3.16
 
 Para instalar python, necesitarás un ordenador con conexión a internet, con sistema operativo basado en Unix o en Windows. Yo usaré una distribución Linux, Parrot OS. 
