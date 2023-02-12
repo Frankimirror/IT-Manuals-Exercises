@@ -75,7 +75,7 @@ Debian-y-derivados (DPKG) : $ dpkg -l > packages.txt
 
 ```
 Debian-y-derivados (APT): $ apt list --installed > packages.txt
-
+```
 ```
 RPM: $ rpm -qa --last > packages.txt
 ```
@@ -210,19 +210,3 @@ dig >> red.txt
 ```
 route >> red.txt
 ```
-
-
-
- 
-
-
-
-
-7
-
-
-
-
-
-
-
