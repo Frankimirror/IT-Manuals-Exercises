@@ -187,7 +187,8 @@ sudo cp /etc/shadow ~/firmas/shadowsoriginal ;   sha256sum shadoworiginal > shad
 cat /home/$USER/.bash_history >> historial-bash.txt
 ```
 
-- Analizar el historial de la terminal ZSH y redireccionar a archivo de texto                                                                                                   ```                                                                                     
+- Analizar el historial de la terminal ZSH y redireccionar a archivo de texto                                                                                                   
+```                                                                                     
 cat /home/$USER/.zsh_history >> historial-zsh.txt                                     
 ```  
 
