@@ -237,4 +237,3 @@ cambiar prioridad, y mostrando además información sobre
 el uso de los recursos consumidos (CPU, RAM, etc.)
 - htop -> similar a top, pero además permite ordenar los  
 procesos por parámetros, como el uso de CPU y RAM  
-(hay que instalarla, no viene por defecto)
