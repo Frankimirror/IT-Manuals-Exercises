@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 11</title>
+</head>
+<body>
+    <script>
+    
+        function volter(numero){
+            let invertido = 0;
+            
+            while (numero != 0) {
+            invertido = 10 * invertido + numero % 10
+            numero = (Math.floor(numero / 10))
+        }
+            document.write(invertido)
+        }
+
+        let numero = parseInt(prompt("Introduce un numero"));
+        let numfinal = volter(numero);
+
+    </script>
+    
+</body>
+</html>

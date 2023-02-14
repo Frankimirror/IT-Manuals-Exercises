@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <!-- 4. Dado un array de 50 enteros (entre 100 y 200), imprimir cuantos números son mayores que
+    la media. -->
+
+    <script>
+    let numeros = new Array(50);
+    let mayor = -1;
+    let menor = 300;
+    let sum = 0;
+    let media;
+    let numerosmedia = 0;
+
+        for (let f=0; f < numeros.length; f++) {
+            numeros[f]=parseInt((Math.random()*101)+100);
+            sum += numeros[f];
+            media = sum/numeros.length;
+            if (numeros[f]>media) {
+                numerosmedia++
+            }
+        }
+        document.write(numeros + "<br>");
+        document.write("La media es de " + media);
+        document.write("<br>")
+        document.write("Los numeros mayores a la media son " + numerosmedia);
+    </script>
+</body>
+</html>
