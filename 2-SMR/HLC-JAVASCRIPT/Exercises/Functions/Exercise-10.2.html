@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francmirror | Exercise 11</title>
+    <title>Francmirror | Exercise 10</title>
 </head>
 <body>
     <script>
     
+    /* Declaro un acumulador llamado invertido, este almacenanará la secuencia de 
+     los restos. Para hacer que los restos se desplacen a la izquierda lo
+     multiplico por 10, y para terminar, le sumo el resto  */
+
+
     function volter(numero){ 
         let invertido = 0
         let resto = numero
@@ -20,16 +25,10 @@
         return invertido
         }
 
-    let numero = parseInt(prompt("Introduce un numero"));
+        let numero = parseInt(prompt("Introduce un numero"));
+        let numfinal = volter(numero);
 
-    if (volter(numero) === numero){
-        document.write("Es capicúa");
-    } else{
-        document.write("No es capicúa");
-    }
-        
-
-    
+        document.write(numfinal)
 
 
 

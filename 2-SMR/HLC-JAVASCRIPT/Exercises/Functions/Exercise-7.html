@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francmirror | Exercise 7</title>
+    <title>Francmirror | Exercise 6</title>
 </head>
 
 <body>
@@ -13,37 +13,20 @@
 
         let n1 = parseInt(prompt("What's your first number"));
         let n2 = parseInt(prompt("What's your second number"));
+        let numFinal = esPrimo(n);
+
+        for(let i=0; i>n1; i++){
+            document.write("Your numbers are "+n1+n2)
+        }
 
         function esPrimo(n){
-            let numprimo;
-            i=2;
-            
-            numprimo=true;
-
-            do {
+            for(let i=2; i<n; i++){
                 if (n%i==0){
-                    numprimo=false;
-                }
-                i++
-            } while(i<n);
-        
-        if(numprimo==true){
+                    return false;
+                } 
+            }
             return true;
-        } else{
-            return false;
         }
-    }
-
-    let numfinal=esPrimo(n)
-
-    for(let i=0; numprimo<100; i++){
-        if (numfinal == true){
-            document.write("Es primo");
-        } else {
-            document.write("No es primo");
-        }
-    }
-
 
     </script>
 
