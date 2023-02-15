@@ -10,14 +10,8 @@
 
 <body>
     <script>
-
         let n1 = parseInt(prompt("What's your first number"));
         let n2 = parseInt(prompt("What's your second number"));
-        let numFinal = esPrimo(n);
-
-        for(let i=0; i>n1; i++){
-            document.write("Your numbers are "+n1+n2)
-        }
 
         function esPrimo(n){
             for(let i=2; i<n; i++){
@@ -27,7 +21,14 @@
             }
             return true;
         }
+        
 
+        for(let i=n1; i<n2; i++){
+            if (esPrimo(i)){
+                document.write(i);
+                
+            }
+        }
     </script>
 
 </body>

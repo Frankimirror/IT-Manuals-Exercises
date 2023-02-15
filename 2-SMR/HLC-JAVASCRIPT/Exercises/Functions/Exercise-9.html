@@ -8,15 +8,25 @@
 </head>
 <body>
     <script>
-            
-        let n = parseInt(prompt("Introduce 1 o 0"));
+           
+        let adelante = true;
+        let numfinal = "";
 
-        do {
-            document.write("Hola");
-        } while(n>=1)
-        
-        
-    
+        while (adelante){
+            let n = prompt("Introduce un numero");
+            if (n===0){
+                adelante = false;
+                document.write(juntarNum(n))
+            } else {
+                adelante=true
+            }
+        }  
+
+        function juntarNum(num1,num2) {
+            return "" +num1+num2;
+        }   
+      
+      
     </script>
     
 </body>
