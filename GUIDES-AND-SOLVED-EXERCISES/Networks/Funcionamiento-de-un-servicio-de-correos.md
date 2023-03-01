@@ -55,3 +55,54 @@ La mayoría del software que se usa en el transporte de correo hoy en día, usa 
 - Responder (REPLY TO): campo opcional que lleva la dirección a la que queremos que nos respondan. 
 - Fecha (DATE): en este campo se reflejan la fecha y la hora del sistema emisor del mensaje.
 - Tema (SUBJECT): en este campo se reflejan la fecha y la hora del sistema emisor del mensaje.
+---
+# Envío del mensaje de correo
+## SMTP
+El protocolo usado para el envío de mensajes es llamado SMTP (Simple Mail Transfer Protocol), el cuál utiliza el puerto 25. Este protocolo está definido en el RFC 821, 2821 y 5321. Se comunica con otros servidores o clientes con texto plano o codificado en ASCII. El protocolo SMTP también puede está bajo SSL, pero entonces usaría el puerto 465 (no oficial) y puede utilizar el 587 en algunos programas. En resumen, gracias a los servidores SMTP podemos enviar correos. 
+
+El funcionamiento del servicio SMTP es el siguiente:
+1. El cliente, establece una conexión con el servidor SMTP y espera un mensaje "220 Service ready" o "421 Service non available"
+2. Si el mensaje tiene exito (220), el cliente envía la ofden HELO, pidiendo que se identifique el servidor e iniciar así una sesión
+3. Una vez identifcado , el cliente empieza el envío de correo con MAIL. El servidor contesta "250 OK"
+4. Con la orden "RCPTTO:<<user@host>>" el cliente indica para quién es el correo, si el envío es para varios se envía distintos RCPTTO. El servidor, para cada orden constesta con RCPT "250 OK" o "550 No such user here", si no encuentra al destinatario
+5. El cliente envía la orden DATA para especificar los contenidos del mensaje. El servidor responde "354 Start mail input, end with CRLF.CRLF". Esta es la notificación acordada para el fin del mensaje.
+6. El cliente envía el cuerpo del mensaje, línea a línea siendo la última en punto. Si todo ha salido a la perfección, el servidor enviará un "250 Some recipients OK" o con un mensaje de error.
+7. Si no se van a enviar más correos, el cliente cierra la conexión con QUIT. El servidor contesta "221 Goodbye"
+## Tipos MIME
+Los tipo MIME (Multipurpose Internet Mail Extensions) son unas especificaciones de intercambio, a través de internet, de todo tipo de archivos (audio, vídeo, documentos en pdf...) de forma transparente para el usuario. El correo electrónico y las páginas web surgieron exclusivamente en modo texto, pero nacieron nuevas necesidades que obligaron a crear un sistema que permitiese el intercambio de todo tipo de archivos. El correo es solo ASCII mientras que los navegadores solo aceptan de forma nativa el modo ASCII y las imágenes (en formatos como JPG, GIF, etc). La evolución hizo que en internet se crearan los tipo MIME lo cuales son capaces de soportas:
+- Textos en carácteres no ASCII
+- Ficheros adjuntos que no son del tipo texto
+- Cuerpos de mensajes con múltiples partes 
+- Internacionalización de las nuevas DNS.
+> Los tipos MIME son una norma del IETF (Internet Engineering Task Force),y están especificados en los  
+> RFC 2045, 2046, 2047, 2077, 4288 y 4289.
+
+---
+# Recepción del correo
+## POP e IMAP
+Los protocolos implementados por los MUA para la recepción de correo son:
+- POP (Post Office Protocol) permite la gestión, el acceso y la transferencia entre el servidor y el cliente local. Usa el puerto 110 (en su versión POP3, la más usada actualmente), el 995 para POP3S
+- IMAP (Internet Message Access Protocol) protocolo de acceso a mensajes almacenador en el servidor. Usa el puerto 143, el 220 para su versión IMAP3 y 993 para IMAPS. El IMAP4.1 está especificado en el RFC 3501.
+## El mensaje recibido
+Cuando se recibe un mensaje de correo electrónico puede verse en la denominada bandeja de entrada un resumen de éste:
+- Remitente (de: | From:)
+- Asunto
+- Si el mensaje es una respuesta el asunto suele empezar por RE:
+- Cuando el mensaje procede de un envío el asunto suele comenzar por RV: o Fwd:
+- Fecha
+- Pueden aparecer campos como la prioridad, destinatarios, tamaño, marca, etc
+Una vez que el destinatario ha recibido (y, normalmente, leído) el mensaje puede hacer varias cosas con él.  Normalmente los sistemas de correo (tanto programas como correo web) ofrecen opciones como:
+- Responder
+- Reenviar
+- Marcar como spam
+- Archivar
+- Borrar
+- Mover a carpeta o Añadir etiquetas
+---
+# Spam 
+Podemos llamar Spam a mensajes no solicitados, normalmente de publicidad y enviado a una gran cantidad de destinatarios. Muchos proveedores de correo ya tienen sus propias listas negras donde considera Spam muchas cuentas de correo.
+Existe dos tipos de correo basura:
+- La publicidad encubierta: son mensajes de relaciones públicas diseñadas para promocionar una empresa, producto o individuo. Utiliza un lenguaje comercial y tienen enlaces a páginas comerciales.
+- Phishing, virus y otros dañinos.
+Estos delitos están contemplados en la LSSI y en la LOPD con multas de hasta 150.000  
+euros. 
