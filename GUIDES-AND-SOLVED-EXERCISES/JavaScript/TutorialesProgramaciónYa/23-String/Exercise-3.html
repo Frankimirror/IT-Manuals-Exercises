@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 2 Chapter 23</title>
+</head>
+<body>
+    
+    <script>
+
+        //Search for a key string in a source string. A phrase or text (source) must be 
+        //entered and then the key to be searched for. If it is found, print the position, 
+        //otherwise a legend indicating that it is not there.
+
+    
+        let sentence = prompt("Enter a sentence:");
+        document.write(sentence + "<br><br>");
+        let word = prompt("Enter a word:");
+        
+        if (sentence.indexOf(word) != -1) {
+            document.write("The entered phrase contains the word: " + word +
+                " from the position " + sentence.indexOf(word));
+        } else {
+            document.write("The phrase entered does not contain the word: " + word);
+        }
+    
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 2 Chapter 23</title>
+</head>
+<body>
+    <script>
+
+        //Igual al anterior, pero que termine la aplicación sin contemplar mayúsculas ni minúsculas. 
+        //Es decir que para salir se pueda teclear fin, Fin o FIN. 
+
+        let nombre;
+        let num = 0;
+        do {
+            nombre = prompt("What's the words (Write END if you want to stop):");
+            num++;
+            nombre = nombre.toUpperCase();
+        } while (nombre != "END");
+      
+        num--;
+        document.write("There are " + num + " words");
+    </script>
+</body>
+</html>

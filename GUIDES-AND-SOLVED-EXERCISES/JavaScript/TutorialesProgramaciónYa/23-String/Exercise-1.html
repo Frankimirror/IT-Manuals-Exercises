@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 1 Chapter 23</title>
+</head>
+<body>
+    <script>
+
+        //Enter a series of names by keyboard until the word End is 
+        //loaded, and display how many names were entered.
+
+        let nombre;
+        let num = 0;
+       
+        do {
+            nombre = prompt("What's the words (write End if you want to stop): ");
+            num++;
+        } while (nombre != "End");
+        
+        num--;
+        document.write("There are " + num + " words");
+    </script>
+    
+</body>
+</html>
