@@ -10,6 +10,25 @@
     
     <script>
 
+        //Codifique un programa que permita cargar una oración por teclado, luego mostrar cada palabra ingresada en una línea distinta.
+
+        //Por ejemplo si cargo:
+        //	La mañana está fría.
+        //Debe aparecer:
+        //La
+        //mañana
+        //está
+        //fría.
+
+        let frase = prompt('Ingrese una frase:');
+        for (let f = 0; f < frase.length; f++) {
+            if (frase.charAt(f) == ' ') {
+                document.write('<br>');
+            } else {
+                document.write(frase.charAt(f));
+            }
+        }
+
     </script>
     
 </body>

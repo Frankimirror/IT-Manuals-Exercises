@@ -8,18 +8,21 @@
 </head>
 <body>
     <script>
-    
-        let word = prompt("Enter a word");
-        let flip="";
 
-        for(let i = word.length-1; i>=0;i--){
-            flip = flip+word.charAt(i);
+        //Ingresar una palabra o texto por teclado y determinar si es o no una palabra palíndromo. 
+        //Palabra que se lee de igual manera de adelante hacia atrás, que de atrás hacia delante) 
+    
+        let texto = prompt('Ingrese una palabra o frase:');
+        let cant = 0;
+        for (let f = 0; f < texto.length; f++) {
+            if (texto.charAt(f) == texto.charAt(texto.length - 1 - f)) {
+                cant++;
+            }
         }
-        
-        if (word==flip){
-            document.write("The word " + word + " is Palindrome");
-        } else{
-            document.write("The word " + word + " isn't Palindrome");
+        if (cant == texto.length) {
+            document.write(texto + ' se lee igual en ambas direcciones');
+        } else {
+            document.write(texto + ' no se lee igual en ambas direcciones');
         }
         
     </script>

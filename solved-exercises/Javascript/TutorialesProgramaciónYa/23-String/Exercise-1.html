@@ -9,19 +9,17 @@
 <body>
     <script>
 
-        //Enter a series of names by keyboard until the word End is 
-        //loaded, and display how many names were entered.
+        //Ingresar una serie de nombres por teclado hasta que se cargue la palabra Fin, y mostrar cuántos nombres se ingresaron. 
 
         let nombre;
-        let num = 0;
-       
+        let cant = 0;
         do {
-            nombre = prompt("What's the words (write End if you want to stop): ");
-            num++;
-        } while (nombre != "End");
-        
-        num--;
-        document.write("There are " + num + " words");
+            nombre = prompt('Ingrese un nombre (Terminar ingresando Fin):');
+            cant++;
+        } while (nombre != 'Fin');
+        //para descontar la palabra Fin
+        cant--;
+        document.write('Se ingresaron ' + cant + ' palabras');
     </script>
     
 </body>

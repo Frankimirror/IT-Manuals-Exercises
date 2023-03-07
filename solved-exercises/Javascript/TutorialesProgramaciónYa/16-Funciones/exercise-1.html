@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 1 - Chapter 16</title>
+</head>
+<body>
+    <script>
+        //Confeccionar una función que solicite la carga de dos enteros (primero el menor y luego el mayor) y nos muestre desde el menor hasta el mayor de uno en uno.
+        //Por ejemplo si ingresamos los valores 4 y 10 luego se debe mostrar por pantalla:
+        //4 5 6 7 8 9 10
+
+        function mostrarRango() {
+            let inicio = parseInt(prompt("Ingrese valor inicial"))
+            let fin = parseInt(prompt("Ingrese valor final"))
+            for (let f = inicio; f <= fin; f++) {
+                document.write(f + " - ")
+            }
+        }
+
+        mostrarRango();
+        
+    </script>
+</body>
+</html>

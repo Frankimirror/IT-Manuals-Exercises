@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francmirror | Exercise 6 - Chapter 13</title>
+</head>
+<body>
+    <script>
+        //Desarrollar un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.
+        //Emplear el operador "%" en la condición de la estructura condicional.
+        //if (valor%2==0)
+        //El operador "%" retorna el resto de la división valor / 2. Por ejemplo: 12 % 2, retorna 0; 13 % 2, retorna 1, porque el resto de dividir 13 en 2 es 1. 
+        
+        let cantpares = 0;
+        let cantimpares = 0;
+        let x = 0;
+        let valor;
+        while (x < 5) {
+            valor = parseInt(prompt('Ingrese un valor'));
+            if (valor % 2 == 0) {
+                cantpares = cantpares + 1;
+            } else {
+                cantimpares = cantimpares + 1;
+            }
+            x = x + 1;
+        }
+        document.write('Cantidad de valores pares ingresados:' + cantpares);
+        document.write('<br>');
+        document.write('Cantidad de valores impares ingresados:' + cantimpares);
+        
+    </script>
+</body>
+</html>

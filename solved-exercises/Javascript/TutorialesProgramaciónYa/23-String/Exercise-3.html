@@ -10,20 +10,17 @@
     
     <script>
 
-        //Search for a key string in a source string. A phrase or text (source) must be 
-        //entered and then the key to be searched for. If it is found, print the position, 
-        //otherwise a legend indicating that it is not there.
+        //Realizar la búsqueda de un string clave en un string fuente. Se deberá ingresar una frase o texto (fuente) y luego la clave a buscar.
+        // En caso de encontrarla, imprimir la posición, de lo contrario una leyenda que indique que no está. 
 
-    
-        let sentence = prompt("Enter a sentence:");
-        document.write(sentence + "<br><br>");
-        let word = prompt("Enter a word:");
-        
-        if (sentence.indexOf(word) != -1) {
-            document.write("The entered phrase contains the word: " + word +
-                " from the position " + sentence.indexOf(word));
+        let frase = prompt('Ingrese una oración:');
+        document.write(frase + '<br><br>');
+        let palabra = prompt('Ingrese una palabra:');
+        if (frase.indexOf(palabra) != -1) {
+            document.write('La frase ingresada contiene la palabra: ' + palabra +
+                ' a partir de la posición ' + frase.indexOf(palabra));
         } else {
-            document.write("The phrase entered does not contain the word: " + word);
+            document.write('La frase ingresada no contiene la palabra: ' + palabra);
         }
     
         
