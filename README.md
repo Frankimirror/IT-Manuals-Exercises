@@ -8,10 +8,8 @@ What's Included
 
 The IT Manuals Exercises repository includes a variety of materials, such as:
 
-    Exercises: Practice your skills with a wide range of exercises that cover topics such as programming, networking, security, databases, and more.
-
-    Manuals: Explore in-depth guides and manuals that provide detailed explanations of various IT concepts, techniques, and best practices.
-
-    Guides: Learn step-by-step how to accomplish specific tasks or implement specific solutions with our comprehensive guides.
+- Exercises: Practice your skills with a wide range of exercises that cover topics such as programming, networking, security, databases, and more.
+- Manuals: Explore in-depth guides and manuals that provide detailed explanations of various IT concepts, techniques, and best practices.
+- Guides: Learn step-by-step how to accomplish specific tasks or implement specific solutions with our comprehensive guides.
 
 We hope that you find the IT Manuals Exercises repository to be a valuable resource for your IT learning and development. Thank you for your interest and contribution, and we look forward to helping you achieve your goals in the exciting world of IT!
