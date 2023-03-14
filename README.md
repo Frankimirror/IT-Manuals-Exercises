@@ -1,10 +1,12 @@
 # IT Manuals Exercises
 
 Welcome to the IT Manuals Exercises repository! Here you will find a collection of exercises, manuals, and guides covering a wide range of topics in the field of computer science and information technology.
-About the Repository
+
+## About the Repository
 
 This repository is designed to provide a comprehensive resource for anyone looking to improve their skills and knowledge in various areas of IT. Whether you are a beginner or an experienced professional, you will find a wealth of information and resources to help you grow and develop.
-What's Included
+
+## What's Included
 
 The IT Manuals Exercises repository includes a variety of materials, such as:
 
